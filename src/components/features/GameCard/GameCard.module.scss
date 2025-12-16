@@ -1,0 +1,116 @@
+.card {
+  height: 100%;
+  @include flex-column;
+}
+
+.cardButton {
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  flex: 1;
+  @include flex-column;
+
+  &:focus-visible {
+    outline: 2px solid $primary-color;
+    outline-offset: 2px;
+  }
+}
+
+.content {
+  flex: 1;
+  @include flex-column;
+  gap: $spacing-sm;
+}
+
+.relevanceTag {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $radius-full;
+  font-size: $font-xs;
+  font-weight: $font-semibold;
+}
+
+.high {
+  background: #e7f6ec;
+  color: #1b7a3c;
+}
+
+.medium {
+  background: #fff4e5;
+  color: #b15b00;
+}
+
+.low {
+  background: #fff0f0;
+  color: #b91c1c;
+}
+
+.minimal {
+  background: #f3f4f6;
+  color: #4b5563;
+}
+
+.title {
+  font-size: $font-lg;
+  font-weight: $font-semibold;
+  color: $text-primary;
+  margin: 0;
+  line-height: 1.3;
+  @include truncate(2);
+}
+
+.platforms {
+  display: flex;
+  gap: $spacing-xs;
+  flex-wrap: wrap;
+}
+
+.platform {
+  font-size: $font-lg;
+}
+
+.genres {
+  display: flex;
+  gap: $spacing-xs;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.genre {
+  display: inline-block;
+  padding: $spacing-xs $spacing-sm;
+  background: rgba($primary-color, 0.1);
+  color: $primary-color;
+  font-size: $font-xs;
+  font-weight: $font-medium;
+  border-radius: $radius-full;
+}
+
+.footer {
+  padding: $spacing-sm $spacing-md;
+}
+
+.ratingWrapper {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+}
+
+.date {
+  font-size: $font-xs;
+  color: $text-muted;
+}
+
+.favoriteBtn {
+  padding: $spacing-xs;
+  min-height: auto;
+  font-size: $font-lg;
+}

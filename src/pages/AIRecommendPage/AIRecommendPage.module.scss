@@ -1,0 +1,66 @@
+.page {
+  @include flex-column;
+  gap: $spacing-xl;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.header {
+  margin-bottom: $spacing-xl;
+}
+
+.title {
+  font-size: $font-3xl;
+  margin: 0 0 $spacing-sm;
+}
+
+.subtitle {
+  margin: 0;
+  color: $text-secondary;
+}
+
+.section {
+  background: $bg-primary;
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  box-shadow: $shadow-sm;
+  margin-bottom: $spacing-lg;
+}
+
+.sectionTitle {
+  margin: 0 0 $spacing-md;
+  font-size: $font-xl;
+}
+
+.moods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-sm;
+}
+
+.moodBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-xs;
+  padding: $spacing-xs $spacing-sm;
+  border-radius: $radius-full;
+  background: rgba($secondary-color, 0.1);
+  color: $secondary-color;
+  font-weight: $font-semibold;
+  text-transform: capitalize;
+}
+
+.hint {
+  margin: 0;
+  color: $text-secondary;
+}
+
+.list {
+  margin: 0;
+  padding-left: $spacing-lg;
+  display: grid;
+  gap: $spacing-sm;
+}

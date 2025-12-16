@@ -1,0 +1,163 @@
+.page {
+  @include flex-column;
+  gap: $spacing-xl;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.header {
+  margin-bottom: $spacing-xl;
+}
+
+.title {
+  font-size: $font-3xl;
+  margin: 0 0 $spacing-sm;
+}
+
+.subtitle {
+  margin: 0;
+  color: $text-secondary;
+}
+
+.section {
+  background: $bg-primary;
+  border: 1px solid $border-color;
+  border-radius: $radius-lg;
+  padding: $spacing-lg;
+  box-shadow: $shadow-sm;
+  margin-bottom: $spacing-lg;
+}
+
+.sectionTitle {
+  margin: 0 0 $spacing-md;
+  font-size: $font-xl;
+}
+
+.form {
+  display: grid;
+  gap: $spacing-md;
+}
+
+.formTitle {
+  margin: 0;
+}
+
+.label {
+  display: grid;
+  gap: $spacing-xs;
+  font-weight: $font-medium;
+  color: $text-primary;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: $spacing-sm $spacing-md;
+  border: 1px solid $border-color;
+  border-radius: $radius-md;
+  font-size: $font-base;
+  background: $bg-primary;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.button,
+.primaryButton {
+  @include button-base;
+}
+
+.primaryButton {
+  background: $primary-color;
+  color: $text-light;
+}
+
+.sectionHeader {
+  @include flex-between;
+  gap: $spacing-md;
+  flex-wrap: wrap;
+}
+
+.actions {
+  display: flex;
+  gap: $spacing-sm;
+}
+
+.grid {
+  display: grid;
+  gap: $spacing-lg;
+  grid-template-columns: 1fr 1.5fr;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.list {
+  display: grid;
+  gap: $spacing-xs;
+}
+
+.gameItem {
+  width: 100%;
+  text-align: left;
+  border: 1px solid $border-color;
+  background: $bg-primary;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $radius-md;
+  transition: border-color $transition-fast, background $transition-fast;
+
+  &:hover {
+    border-color: $primary-color;
+  }
+
+  &.active {
+    border-color: $primary-color;
+    background: rgba($primary-color, 0.05);
+  }
+}
+
+.gameTitle {
+  display: block;
+  font-weight: $font-semibold;
+  margin-bottom: $spacing-xs;
+}
+
+.gameMeta {
+  color: $text-secondary;
+  font-size: $font-sm;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: $spacing-md;
+}
+
+.muted {
+  color: $text-secondary;
+  margin: 0;
+}
+
+.error {
+  color: $error-color;
+  margin: 0;
+}
+
+.info {
+  color: $secondary-color;
+  margin: 0;
+}
+
+.preview {
+  @include flex-column;
+  gap: $spacing-xs;
+
+  img {
+    max-width: 240px;
+    border-radius: $radius-md;
+    border: 1px solid $border-color;
+  }
+}
