@@ -82,3 +82,8 @@ npm run dev
 
 ## ℹ️ Примечания
 - Supabase: можно включить, поставив `VITE_USE_EXPRESS_BACKEND=false` и задав `VITE_SUPABASE_URL` / `VITE_SUPABASE_ANON_KEY`.
+
+## Презентация
+- Можно посмотреть на https://matveyzhikharev.github.io/gameCenter/presentation
+
+  (для корректного отображения откройте в полноэкранном режиме – F11)
